@@ -1,0 +1,19 @@
+server:
+  port: 18080
+  jetty:
+    connection-idle-timeout: 0
+    max-http-form-post-size: 9000000
+  servlet:
+    context-path: /
+    session:
+      timeout: 86400 # 1 day = 60 sec * 60 min * 24 hour
+  error:
+    path: /error
+    include-stacktrace: always
+    include-exception: true
+    whitelabel:
+      enabled: true
+
+
+
+
