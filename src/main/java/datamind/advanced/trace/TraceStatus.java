@@ -7,12 +7,12 @@ public class TraceStatus {
 
     private TraceId traceId;
     private long startTimeMs; // 로그 시작 시간
-    private String message;
+    private String message; // message
 
     public TraceStatus(TraceId traceId, long startTime, String message) {
         this.traceId = traceId;
-        this.startTimeMs = startTime;
         this.message = message;
+        this.startTimeMs = startTime;
     }
 
     public TraceId getTraceId() {
