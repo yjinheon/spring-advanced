@@ -19,4 +19,6 @@
 ### 필요성
 
 - TraceId를 파라미터로 넘기지 않고 동기화해야 한다.
+- TraceId 동기화하는 부분인 파라미터를 사용하는 것에서 TraceId traceIdHolder 필드를 사용하도록 변경
+
 
