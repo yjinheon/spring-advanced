@@ -58,6 +58,15 @@ public class ContextV1Test {
         };
         log.info("strategyLogic={}",strategyLogic1.getClass());
         ContextV1 contextV1 = new ContextV1(strategyLogic1);
+        contextV1.execute();
+
+        Strategy strategyLogic2 = new Strategy() {
+            @Override
+            public void call() {
+                log.info("execute logic2");
+            }
+        };
+        log.info("strategyLogic={}",strategyLogic2.getClass());// 
     }
 
 
