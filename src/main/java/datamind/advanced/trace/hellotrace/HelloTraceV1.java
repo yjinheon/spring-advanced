@@ -13,11 +13,12 @@ public class HelloTraceV1 {
     private static final String COMPLETE_PREFIX = "<--";
     private static final String EX_PREFIX = "<X-";
 
-        /*
-        - 로그 시작
-        - 로그 메시지를 파라미터로 받아서 시작 로그 출력
-        - 응압결과로 현재 로그 상태인 TraceStatus 반환
-         */
+    /*
+    - 로그 시작
+    - 로그 메시지를 파라미터로 받아서 시작 로그 출력
+    - 응압결과로 현재 로그 상태인 TraceStatus 반환
+     */
+
     public TraceStatus begin(String message ) {
         TraceId traceId = new TraceId();
         Long startTimeMs = System.currentTimeMillis();
